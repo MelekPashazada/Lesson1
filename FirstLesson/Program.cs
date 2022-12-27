@@ -190,6 +190,8 @@
 //Console.WriteLine(s.ToLower());
 //Console.WriteLine(s.ToUpper());
 
+using System.Linq.Expressions;
+
 string name = "Person1";
 string surname = "PersonSurname1";
 
@@ -200,29 +202,95 @@ string username= string.Concat(surname, name);
 
 //Console.WriteLine($"Xosgeldiniz {name}" );
 
+
+
+
+
+
+
 //Lesson3 
 
-string fiqur = "ucbucaq";
-int a = 4;
+//string fiqur = "ucbucaq";
+//int a = 4;
+
+//if (fiqur == "kvadrat")
+//{
+
+//    int p = a * 4;
+//    Console.WriteLine(p);
+
+//}
+//else
+//{
+//    int p3 = a * 3;
+//    Console.WriteLine(p3);
+//}
+
+////1 xetti
+////    2 budaqlanan
+////    3 dovru
 
 
+//votinAge
 
-if (fiqur == "kvadrat")
-{
-   
-    int p = a * 4;
-    Console.WriteLine(p);
+//int votingAge = 18;
+//int age = 5;
+//if (age >= votingAge)
+//{
+//    Console.WriteLine("You can vote");
+//}
+//{
+//    Console.WriteLine("You cannot vote");
+//}
 
-}
-else
-{
-    int p3 = a * 3;
-    Console.WriteLine(p3);
-}
+//good day
 
-//1 / xetti
-//    2 budaqlanan
-//    3 dovru
+//ternary operator
+//variable = (condition) ? expressionTrue :  expressionFalse;
+
+
+//switch (expression)
+//{
+//    case x:
+//        // code block
+//        break;
+//    case y:
+//        // code block
+//        break;
+//    default:
+//        // code block
+//        break;
+//}
+
+//int eded = 1;
+//switch (eded)
+//{
+//    case 1:
+//        Console.WriteLine("bir");
+//        break;
+//    case 2:
+//        Console.WriteLine("iki");
+//        break;
+//    case 3:
+//        Console.WriteLine("uc");
+//        break;
+//}
+
+
+//int i = 5;
+//while (i<10)
+//{
+//    Console.WriteLine("11");
+//    i++;
+//}
+
+
+//do
+//{
+//    Console.WriteLine($"{i}- condition");
+//    i++;
+//}
+//while (i<10);
 
 
 
