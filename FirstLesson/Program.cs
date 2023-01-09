@@ -190,7 +190,10 @@
 //Console.WriteLine(s.ToLower());
 //Console.WriteLine(s.ToUpper());
 
+using System;
 using System.Linq.Expressions;
+using System.Reflection.Metadata;
+using System.Xml.Linq;
 
 string name = "Person1";
 string surname = "PersonSurname1";
@@ -210,28 +213,58 @@ string username= string.Concat(surname, name);
 
 //Lesson3 
 
-//string fiqur = "ucbucaq";
+
+
 //int a = 4;
+//int p = a * 4;
+//Console.WriteLine(p);
 
-//if (fiqur == "kvadrat")
+//for(int i=5; i<8; i=i+2)
 //{
-
-//    int p = a * 4;
-//    Console.WriteLine(p);
+//    Console.Write("Fiquru daxil edin: ");
+//    string fiqur = Console.ReadLine();
+//    if (fiqur == "kvadrat")
+//    {
+//        Console.WriteLine($"Kvadratin perimetri p={p}");
+//    }
+//    else if (fiqur == "ucbucaq")
+//    {
+//        Console.WriteLine($"Ucbucagin perimetri p={a * 3}");
+//    }
+//    else if (fiqur == "daire")
+//    {
+//        Console.WriteLine($"Dairenin perimetri p={2 * 3.14 * a}");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Daxil etdiyiniz fiqur bazada yoxdur");
+//    }
 
 //}
-//else
+
+//for (int i=0;i<=5;++i)
 //{
-//    int p3 = a * 3;
-//    Console.WriteLine(p3);
+//    Console.WriteLine(i);
+//}
+//int heteningunleri = int.Parse( Console.ReadLine());
+
+//switch (heteningunleri)
+//{
+//    case 1:
+//        Console.WriteLine("Bazar ertesidir");
+//        break;
+//    case 2:
+//        Console.WriteLine("Cersenbe axsamidir");
+//        break;
+//    case 3:
+//        Console.WriteLine("Cersenbedir");
+//        break;
 //}
 
-////1 xetti
-////    2 budaqlanan
-////    3 dovru
 
 
-//votinAge
+
+//voteinAge
 
 //int votingAge = 18;
 //int age = 5;
@@ -248,6 +281,11 @@ string username= string.Concat(surname, name);
 //ternary operator
 //variable = (condition) ? expressionTrue :  expressionFalse;
 
+//int a = int.Parse( Console.ReadLine());
+//string deyisen = (a >= 3) ? "a 3-den boyukdur " : "a 3-den boyuk deyil";
+//Console.WriteLine(deyisen);
+
+
 
 //switch (expression)
 //{
@@ -262,27 +300,28 @@ string username= string.Concat(surname, name);
 //        break;
 //}
 
-//int eded = 1;
-//switch (eded)
+//int i = 0;
+//while (i<5)
 //{
-//    case 1:
-//        Console.WriteLine("bir");
-//        break;
-//    case 2:
-//        Console.WriteLine("iki");
-//        break;
-//    case 3:
-//        Console.WriteLine("uc");
-//        break;
+//    Console.WriteLine(i);
+//    ++i;
 //}
 
 
 //int i = 5;
-//while (i<10)
+//while (i > 10)
 //{
-//    Console.WriteLine("11");
+//    Console.WriteLine("--");
 //    i++;
 //}
+
+//int i = 4;
+//do
+//{
+//    Console.WriteLine(i);
+//    i--;
+//}
+//while (i>10);
 
 
 //do
@@ -293,10 +332,118 @@ string username= string.Concat(surname, name);
 //while (i<10);
 
 
+//Lesson4
+
+//encapsulation
+//Public
+//Private
+//Protected
+//Internal
+//Protected internal
+
+//Methods
+
+//< Access Specifier > < Return Type > < Method Name > (Parameter List) {
+//    Method Body
+//}
+
+//nullable
+
+//arrays
+
+//strings
+
+//string day = Console.ReadLine();
+//switch (day)
+//{
+//    case "Bazar ertesi":
+//        Console.WriteLine("1");
+//        break;
+//    case "Thursday":
+//        Console.Write("2");
+//        break;
+
+//}
+
+//int year = 1;
+//if ()
+//{
+//}
+
+//1 ~ 1924,1936,1948,1960,1972,1984,1996,2008---------------12-ə bolunəndə qaliq 4+9
+//2 Öküz 1925,1937,1949,1961,1973,1985,1997,2009
+//3 Peleng 1926,1938,1950,1962,1974,1986,1998,2010
+//4 Dovşan 1927,1939,1951,1963,1975,1987,1999,2011
+//5 Ejdaha 1928,1940,1952,1964,1976,1988,2000,2012
+//6 İlan 1929,1941,1953,1965,1977,1989,2001,2013
+//7 At 1930,1942,1954,1966,1978,1990,2002,2014
+//8 Qoyun 1931,1943,1955,1967,1979,1991,2003,2015
+//9 Meymun 1932,1944,1956,1968,1980,1992,2004,2016 -----------12-ə tam bolunenler qaliq 0+9
+//10 Toyuq(Xoruz)1933,----------------------------------------12-ə bolunəndə qaliq 1 qalir+9
+//11 İt 1934,1946,1958,1970,1982,1994,2006,2018---------------12-ə bolunəndə qaliq 2- qalir+9
+//12 Qaban 1935,1947,1959,1971,1983,1995,2007,2019)-----------12-ə bolunəndə qaliq 3+9
+
+//Console.WriteLine("Zehmet olmasa dogum ilinizi qeyd edin: ");
+//int year = int.Parse( Console.ReadLine());
+//int a = year % 12+9;
+
+//if (a > 12)
+//{
+//    a = a - 12;
+//}
+
+//switch (a)
+//{
+//    case 1:
+//        Console.WriteLine("sican");
+//        break;
+//    case 2:
+//        Console.WriteLine("okuz");
+//        break;
+//    case 3:
+//        Console.WriteLine("peleng");
+//        break;
+//    case 4:
+//        Console.WriteLine("dovsan");
+//        break;
+//    case 5:
+//        Console.WriteLine("ejdaha");
+//        break;
+//    case 6:
+//        Console.WriteLine("ilan");
+//        break;
+//    case 7:
+//        Console.WriteLine("at");
+//        break;
+//    case 8:
+//        Console.WriteLine("qoyun");
+//        break;
+//    case 9:
+//        Console.WriteLine("meymun");
+//        break;
+//    case 10:
+//        Console.WriteLine("toyuq");
+//        break;
+//    case 11:
+//        Console.WriteLine("it");
+//        break;
+//    case 12:
+//        Console.WriteLine("qaban");
+//        break;
+
+//}
 
 
+int say = 0;
+for (int i = 1999; i < 2023; i++){
+   int  b = i % 4;
+    if (b == 0)
+    {
+        say++;
+    }
+}
 
-
+Console.WriteLine(say);
 
 
 
