@@ -331,27 +331,7 @@ string username= string.Concat(surname, name);
 //}
 //while (i<10);
 
-
-//Lesson4
-
-//encapsulation
-//Public
-//Private
-//Protected
-//Internal
-//Protected internal
-
-//Methods
-
-//< Access Specifier > < Return Type > < Method Name > (Parameter List) {
-//    Method Body
-//}
-
-//nullable
-
-//arrays
-
-//strings
+//Lesson3 repeat
 
 //string day = Console.ReadLine();
 //switch (day)
@@ -434,16 +414,41 @@ string username= string.Concat(surname, name);
 //}
 
 
-int say = 0;
-for (int i = 1999; i < 2023; i++){
-   int  b = i % 4;
-    if (b == 0)
-    {
-        say++;
-    }
-}
+//int say = 0;
+//for (int i = 1999; i < 2023; i++){
+//   int  b = i % 4;
+//    if (b == 0)
+//    {
+//        say++;
+//    }
+//}
 
-Console.WriteLine(say);
+//Console.WriteLine(say);
 
+
+
+
+
+
+//Lesson4
+
+//encapsulation
+//Public
+//Private
+//Protected
+//Internal
+//Protected internal
+
+//Methods
+
+//< Access Specifier > < Return Type > < Method Name > (Parameter List) {
+//    Method Body
+//}
+
+//nullable
+
+//arrays
+
+//strings
 
 
