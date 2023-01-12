@@ -3,9 +3,9 @@
 //////using System.Drawing;
 //////using System.Security.Cryptography.X509Certificates;
 
-////////Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
-////////Console.WriteLine(3 + 3); //toplama
+//Console.WriteLine(3 - 3); //toplama
 
 ////////multiline comment
 ///////*
@@ -13,37 +13,37 @@
 ////// * 
 //////*/
 
-////////Comments
+//Comments
+
+//int m = 1;
+//float y = 3.14f;
+//double z = 3.14;
+//char ch = 'M';
+//string str = "1ertfyguhjyte5drvctbggh";
+////int bir = 1;
+//bool bl = true;
+//bool bl1 = false;
 
 
-//////float y = 3.14f;
-//////double z = 3.14;
-//////char ch = 'M';
-//////string str= "1";
-////////int bir = 1;
-//////bool bl = true;
-//////bool bl1 = false;
 
 
+//int 4 byte
+//float 4 byte
+//long 8 byte
+//double
+//char
+//string
+//bool
+//---------------------------------------------------------
+//constants
+//const double pi = 3.14;
 
+////display variables
 
-////////int 4 byte
-////////float 4 byte
-////////long 8 byte
-////////double
-////////char
-////////string
-////////bool
-
-////////constants
-//////const double pi = 3.14;
-
-////////display variables
-
-//////int x = -5;
-//////int u = 33;
-//////int m = 55;
-//////long l = 4;
+//int x = -5;
+//int u = 33;
+//int m = 55;
+//long l = 4;
 
 ////////Console.WriteLine(x+u);
 
@@ -190,15 +190,15 @@
 //Console.WriteLine(s.ToLower());
 //Console.WriteLine(s.ToUpper());
 
-using System;
-using System.Linq.Expressions;
-using System.Reflection.Metadata;
-using System.Xml.Linq;
+//using System;
+//using System.Linq.Expressions;
+//using System.Reflection.Metadata;
+//using System.Xml.Linq;
 
-string name = "Person1";
-string surname = "PersonSurname1";
+//string name = "Person1";
+//string surname = "PersonSurname1";
 
-string username= string.Concat(surname, name);
+//string username= string.Concat(surname, name);
 
 //Console.WriteLine(name +"\n"+ surname);
 //Console.WriteLine(name + "\t" + surname);
@@ -321,17 +321,19 @@ string username= string.Concat(surname, name);
 //    Console.WriteLine(i);
 //    i--;
 //}
-//while (i>10);
-
+////while (i>10);
+//int v = 0;
 
 //do
 //{
 //    Console.WriteLine($"{i}- condition");
 //    i++;
+//    v++;
 //}
-//while (i<10);
+//while (i < 10);
+//Console.WriteLine(v);
 
-//Lesson3 repeat
+////Lesson3 repeat
 
 //string day = Console.ReadLine();
 //switch (day)
@@ -364,8 +366,8 @@ string username= string.Concat(surname, name);
 //12 Qaban 1935,1947,1959,1971,1983,1995,2007,2019)-----------12-ə bolunəndə qaliq 3+9
 
 //Console.WriteLine("Zehmet olmasa dogum ilinizi qeyd edin: ");
-//int year = int.Parse( Console.ReadLine());
-//int a = year % 12+9;
+//int year = int.Parse(Console.ReadLine());
+//int a = year % 12 + 9;
 
 //if (a > 12)
 //{
@@ -427,10 +429,48 @@ string username= string.Concat(surname, name);
 
 
 
+//davami eve
+//int s = 0;
+
+//while (s < 5)
+//{
+//    var a = Console.ReadLine();
+//    int b;
+//    int.TryParse(a, out b);
+//    if (b == null)
+//    {
+//        Console.WriteLine("herfdir");
+
+//    }
+//    else
+//    {
+//        Console.WriteLine("reqemdir");
+//    }
+//    s++;
+//}
+
 
 
 
 //Lesson4
+using System.Collections.Generic;
+
+int a = 6;
+List<int> reqemler = new List<int>() { 1,2,3,4,5,6,7,8,9};
+List<string> hefteningunleri = new List<string>() {"sunday","monday","tuesday" };
+List<bool> bl=new List<bool>() {true,false};
+
+reqemler.Add(0);
+
+//Console.WriteLine( reqemler[3]);
+//Console.WriteLine(hefteningunleri[2]);
+
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(reqemler[i]);
+}
+
+
 
 //encapsulation
 //Public
@@ -450,5 +490,3 @@ string username= string.Concat(surname, name);
 //arrays
 
 //strings
-
-
