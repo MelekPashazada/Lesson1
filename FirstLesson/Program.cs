@@ -1,4 +1,5 @@
 ﻿
+
 ////////c# output
 //////using System.Drawing;
 //////using System.Security.Cryptography.X509Certificates;
@@ -452,34 +453,98 @@
 
 
 
-//Lesson4
-using System.Collections.Generic;
+////Lesson4
+//using System.Collections.Generic;
 
-int a = 6;
-List<int> reqemler = new List<int>() { 1,2,3,4,5,6,7,8,9};
-List<string> hefteningunleri = new List<string>() {"sunday","monday","tuesday" };
-List<bool> bl=new List<bool>() {true,false};
+//int a = 6;
+//List<int> reqemler = new List<int>() { 1,2,3,4,5,6,7,8,9};
 
-reqemler.Add(0);
+//List<string> hefteningunleri = new List<string>() {"sunday","monday","tuesday" };
 
-//Console.WriteLine( reqemler[3]);
-//Console.WriteLine(hefteningunleri[2]);
+//List<bool> bl=new List<bool>() {true,false};
 
-for (int i = 0; i < 10; i++)
-{
-    Console.WriteLine(reqemler[i]);
-}
+//reqemler.Add(0);
+
+////Console.WriteLine( reqemler[3]);
+////Console.WriteLine(hefteningunleri[2]);
+//int element =int.Parse( Console.ReadLine());
+
+//for (int i = 0; i < 10; i++)
+//{
+//    if (reqemler[i] == element)
+//    {
+//    Console.WriteLine("reqemdir");
+//    }
+
+
+//}
+
+//class kitab
+//{
+//    string Giris;
+//    string mundericat;
+//    string muellif;
+//}
+
+//public class Heyvanlar
+//{
+
+//   public string Ad;
+//    public int a = 5;
+//    string Ses;
+//    string Cins;
+//    private int b = 5;
+//    protected int c = 6;
+//}
+
+//class Dovsan: Heyvanlar
+//{
+
+
+//}
 
 
 
-//encapsulation
 //Public
 //Private
 //Protected
 //Internal
 //Protected internal
 
+//Lesson5
+
 //Methods
+
+//int a = 5;
+
+
+//int EdedlerinCemi(int a,int b) {
+
+//    int c = a + b;
+//    return c;
+//}
+
+
+//int r= EdedlerinCemi(12,23);
+
+//Console.WriteLine(r);
+
+//string ReturnString(string name,string surname)
+//{
+//    string username = (name + surname).ToLower();
+//    return username;
+//}
+
+//string username = ReturnString("Melek","Pashazade");
+//Console.WriteLine(username);
+
+void HelloWorld()
+{
+    Console.WriteLine("Hello World");
+    
+}
+
+HelloWorld();
 
 //< Access Specifier > < Return Type > < Method Name > (Parameter List) {
 //    Method Body
@@ -490,3 +555,9 @@ for (int i = 0; i < 10; i++)
 //arrays
 
 //strings
+
+//structures
+
+//enum
+
+//classes
