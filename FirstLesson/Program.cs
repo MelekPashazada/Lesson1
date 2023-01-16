@@ -1,8 +1,8 @@
 ﻿
 
-////////c# output
-//////using System.Drawing;
-//////using System.Security.Cryptography.X509Certificates;
+//c# output
+//using system.drawing;
+//using system.security.cryptography.x509certificates;
 
 //Console.WriteLine("Hello, World!");
 
@@ -457,7 +457,7 @@
 //using System.Collections.Generic;
 
 //int a = 6;
-//List<int> reqemler = new List<int>() { 1,2,3,4,5,6,7,8,9};
+//List<int> reqemler = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 //List<string> hefteningunleri = new List<string>() {"sunday","monday","tuesday" };
 
@@ -538,25 +538,97 @@
 //string username = ReturnString("Melek","Pashazade");
 //Console.WriteLine(username);
 
-void HelloWorld()
-{
-    Console.WriteLine("Hello World");
-    
-}
-
-HelloWorld();
+//void HelloWorld()
+//{
+//    Console.WriteLine("Hello World"); 
+//}
+//HelloWorld();
 
 //< Access Specifier > < Return Type > < Method Name > (Parameter List) {
 //    Method Body
 //}
 
 //nullable
+//int? a=8;
+//Console.WriteLine(a);
+
+//int a = 4; (eded)
+//int? v = 5; (hem eded+null)
+
+//string? email = "";
+
+
+////strings
+//string str = "sjkhdz";
+//str.ToLower();
+//str.ToUpper();
+//Console.WriteLine( str[4]);
+
+
+//Lesson5
+//eve
+//for (int i=5; i>0; i--)
+//{
+//    for (int j  = 5; j >0; j--)
+//    {
+//        Console.Write(j);
+//        Console.WriteLine(j);
+//    }
+
+//    Console.WriteLine();
+//}
+
+int i = 0;
+//while (i<5)
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
+
+//do { 
+//    Console.WriteLine(i);
+//    i++;
+//}
+//while (i<5);
+
+//List<int> list = new List<int>() { 1,2,3};
+
+//for (i = 0; i < list.Count; i++)
+//{
+//    Console.WriteLine(list[i]);
+//}
+
+//foreach (int a in list)
+//{
+//    Console.WriteLine(a);
+//}
 
 //arrays
 
-//strings
 
-//structures
+//int[] array1 = { 1,2,3,4,5,6,7,8,9};
+//foreach(int reqem in array1)
+//{
+//    Console.WriteLine(reqem);
+//}
+
+string[] adlar = { "Emine", "Melek", "Pasayev","Eliyeva" };
+
+//foreach (string ad in adlar)
+//{
+//    Console.WriteLine(ad);
+//}
+
+
+//bool[] bl = { true, false, true, true };
+//foreach (bool b in bl)
+//{
+//    Console.WriteLine(b);
+//}
+
+Console.WriteLine(adlar[1]);
+Console.WriteLine(adlar[2]);
+ //structures
 
 //enum
 
