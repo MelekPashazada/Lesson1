@@ -578,6 +578,8 @@
 //    Console.WriteLine();
 //}
 
+using System.Collections.Generic;
+
 int i = 0;
 //while (i<5)
 //{
@@ -612,7 +614,7 @@ int i = 0;
 //    Console.WriteLine(reqem);
 //}
 
-string[] adlar = { "Emine", "Melek", "Pasayev","Eliyeva" };
+string[] adlar = { "Emine", "Melek", "Pasayeva","Eliyeva" };
 
 //foreach (string ad in adlar)
 //{
@@ -626,9 +628,45 @@ string[] adlar = { "Emine", "Melek", "Pasayev","Eliyeva" };
 //    Console.WriteLine(b);
 //}
 
-Console.WriteLine(adlar[1]);
-Console.WriteLine(adlar[2]);
- //structures
+//Console.WriteLine(adlar[1]);
+//Console.WriteLine(adlar[2]);
+
+//structures
+
+struct Book
+{
+    public int id;
+    public string name;
+    public string auther;
+    public int whenwrite;
+    public int whenread;
+
+}
+
+
+class Clas11
+{
+    Book book1;
+    Book Book2;
+
+   
+}
+
+struct Employee
+{
+    public int id;
+
+}
+
+
+class Class1
+{
+    void func()
+    {
+        Employee employee;
+        employee.id = 1;
+    }
+}
 
 //enum
 
